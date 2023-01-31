@@ -1,9 +1,9 @@
 import styled from "styled-components/native";
 
-import Drawer from "./navigation/drawer";
+import Tab from "./navigation/tab";
 
 const App: React.FC = () => {
-  return <Drawer></Drawer>;
+  return <Tab></Tab>;
 };
 
 // 18 - 17 - 1
