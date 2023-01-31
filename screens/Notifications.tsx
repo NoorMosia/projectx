@@ -2,10 +2,10 @@ import { Text } from "react-native";
 
 import styled from "styled-components/native";
 
-const Settings = () => {
+const Notifications = () => {
   return (
     <ScreenWrapper>
-      <Text>Settings!</Text>
+      <Text>Home!</Text>
     </ScreenWrapper>
   );
 };
@@ -17,4 +17,4 @@ const ScreenWrapper = styled.View`
   alignitems: "center";
 `;
 
-export default Settings;
+export default Notifications;

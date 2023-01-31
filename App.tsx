@@ -1,6 +1,4 @@
 import styled from "styled-components/native";
-import { StatusBar } from "expo-status-bar";
-import { Text } from "react-native";
 
 import Drawer from "./navigation/drawer";
 

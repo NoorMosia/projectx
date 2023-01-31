@@ -7,8 +7,9 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 
 //import screens
 import HomeScreen from "../screens/Home";
-import SettingsScreen from "../screens/Settings";
+import FeedScreen from "../screens/Feed";
 import ProfileScreen from "../screens/Profile";
+import NotificationsScreen from "../screens/Notifications";
 
 const Tab = createBottomTabNavigator();
 
@@ -18,7 +19,7 @@ export default function App() {
       <Tab.Navigator
         screenOptions={({ route }) => ({
           tabBarIcon: ({ focused, color, size }) => {
-            let iconName;
+            let iconName: string = "";
 
             if (route.name === "Home") {
               iconName = focused ? "home-outline" : "home";
@@ -40,8 +41,8 @@ export default function App() {
         })}
       >
         <Tab.Screen name="Home" component={HomeScreen} />
-        <Tab.Screen name="Feed" component={SettingsScreen} />
-        <Tab.Screen name="Notifications" component={SettingsScreen} />
+        <Tab.Screen name="Feed" component={FeedScreen} />
+        <Tab.Screen name="Notifications" component={NotificationsScreen} />
         <Tab.Screen name="Profile" component={ProfileScreen} />
       </Tab.Navigator>
     </NavigationContainer>
