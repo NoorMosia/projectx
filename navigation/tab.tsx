@@ -22,15 +22,15 @@ export default function App() {
             let iconName: string = "";
 
             if (route.name === "Home") {
-              iconName = focused ? "home-outline" : "home";
+              iconName = focused ? "home" : "home-outline";
             } else if (route.name === "Feed") {
-              iconName = focused ? "ios-list" : "ios-list-outline";
+              iconName = focused ? "ios-list-outline" : "ios-list";
             } else if (route.name === "Profile") {
-              iconName = focused ? "ios-person-outline" : "ios-person";
+              iconName = focused ? "ios-person" : "ios-person-outline";
             } else if (route.name === "Notifications") {
               iconName = focused
-                ? "notifications-outline"
-                : "ios-notifications";
+                ? "notifications"
+                : "ios-notifications-outline";
             }
 
             // You can return any component that you like here!
