@@ -1,20 +1,17 @@
-import { Text } from "react-native";
-
 import styled from "styled-components/native";
+import HorizontalListing from "../components/HorizontalListing";
 
 const Home = () => {
   return (
     <ScreenWrapper>
-      <Text>Home!</Text>
+      <HorizontalListing></HorizontalListing>
     </ScreenWrapper>
   );
 };
 
 const ScreenWrapper = styled.View`
-  background-color: red;
   flex: 1;
   justifycontent: "center";
   alignitems: "center";
 `;
-
 export default Home;
